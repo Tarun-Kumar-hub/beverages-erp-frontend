@@ -234,10 +234,10 @@ export default function Orders() {
   // ======================================
 
   return (
-    <div className="space-y-6 p-6">
+    <div className="w-full max-w-full space-y-6 p-4 md:p-6 overflow-x-hidden">
+      {" "}
       {/* HEADER */}
-
-      <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
+      <div className="flex flex-col gap-4 lg:flex-row lg:items-center lg:justify-between">
         <div>
           <h1 className="text-4xl font-bold text-gray-800">Orders</h1>
 
@@ -264,11 +264,10 @@ export default function Orders() {
           Create Order
         </button>
       </div>
-
       {/* FILTERS */}
-
       <div className="bg-white border rounded-3xl p-5 shadow-sm">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-4">
+          {" "}
           <div className="relative">
             <Search size={18} className="absolute left-3 top-3 text-gray-400" />
 
@@ -290,7 +289,6 @@ export default function Orders() {
               "
             />
           </div>
-
           <select
             value={status}
             onChange={(e) => setStatus(e.target.value)}
@@ -312,7 +310,6 @@ export default function Orders() {
 
             <option value="cancelled">Cancelled</option>
           </select>
-
           <select
             value={paymentStatus}
             onChange={(e) => setPaymentStatus(e.target.value)}
@@ -326,18 +323,15 @@ export default function Orders() {
 
             <option value="unpaid">Unpaid</option>
           </select>
-
           <div className="flex items-center justify-center bg-gray-100 rounded-xl font-semibold">
             Total Orders: {data?.total || 0}
           </div>
         </div>
       </div>
-
       {/* TABLE */}
-
-      <div className="bg-white border rounded-3xl overflow-hidden shadow-sm">
-        <div className="overflow-x-auto">
-          <table className="w-full min-w-300">
+      <div className="bg-white border rounded-3xl shadow-sm">
+        <div className="w-full overflow-x-auto">
+          <table className="min-w-300 w-full">
             <thead className="bg-gray-50 border-b">
               <tr>
                 <th className="text-left p-5">Order</th>
@@ -726,9 +720,7 @@ export default function Orders() {
           </table>
         </div>
       </div>
-
       {/* PAYMENT MODAL */}
-
       {paymentModal && (
         <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
           <div className="bg-white rounded-2xl p-6 w-full max-w-md shadow-xl">
