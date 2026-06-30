@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
 import toast from "react-hot-toast";
 import { useNavigate, useLocation } from "react-router-dom";
@@ -14,11 +14,26 @@ const LoginForm = () => {
   const { mutate: login, isPending } = useLogin();
 
   const [showPassword, setShowPassword] = useState(false);
+  const [showDelayMessage, setShowDelayMessage] = useState(false);
 
   const [formData, setFormData] = useState({
     email: "",
     password: "",
   });
+
+  useEffect(() => {
+    let timer;
+
+    if (isPending) {
+      timer = setTimeout(() => {
+        setShowDelayMessage(true);
+      }, 5000);
+    } else {
+      setShowDelayMessage(false);
+    }
+
+    return () => clearTimeout(timer);
+  }, [isPending]);
 
   const handleChange = (e) => {
     setFormData((prev) => ({
@@ -117,6 +132,17 @@ const LoginForm = () => {
           "Sign In"
         )}
       </button>
+
+      {showDelayMessage && (
+        <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
+          <p className="font-semibold">Starting the server...</p>
+          <p className="mt-1">
+            This application is hosted on Render's free tier. The first request
+            after a period of inactivity may take up to 60 seconds while the
+            server starts.
+          </p>
+        </div>
+      )}
     </form>
   );
 };
