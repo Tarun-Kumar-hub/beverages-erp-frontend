@@ -137,9 +137,8 @@ const LoginForm = () => {
         <div className="rounded-lg border border-amber-200 bg-amber-50 p-4 text-sm text-amber-800">
           <p className="font-semibold">Starting the server...</p>
           <p className="mt-1">
-            This application is hosted on Render's free tier. The first request
-            after a period of inactivity may take up to 60 seconds while the
-            server starts.
+            This application is hosted on Render's free tier. First request may
+            take up to 60 seconds after inactivity.
           </p>
         </div>
       )}
