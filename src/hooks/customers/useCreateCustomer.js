@@ -17,9 +17,7 @@ export const useCreateCustomer = () => {
     },
 
     onError: (error) => {
-      toast.error(error.response?.data?.error || "Failed to create customer");
-
-      console.log(error.response?.data);
+      toast.error(error.response?.data?.message || "Failed to create customer");
     },
   });
 };

@@ -22,7 +22,7 @@ export const useUpdateCustomer = () => {
 
     onError: (error) => {
       toast.error(
-        error?.response?.data?.error || "Failed to update customer ❌",
+        error.response?.data?.message || "Failed to update customer ❌",
       );
     },
   });

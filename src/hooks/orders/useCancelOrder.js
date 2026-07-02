@@ -23,5 +23,9 @@ export const useCancelOrder = () => {
         queryKey: ["customer-order-history"],
       });
     },
+
+    onError: (error) => {
+      toast.error(error.response?.data?.message || "Failed to cancel order");
+    },
   });
 };

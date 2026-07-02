@@ -1,5 +1,3 @@
-// hooks/products/useAdjustProduct.js
-
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { adjustProductStock } from "../../api/products";
 import toast from "react-hot-toast";
@@ -10,7 +8,6 @@ export const useAdjustProduct = () => {
   return useMutation({
     mutationFn: async ({ id, payload }) => {
       const { data } = await adjustProductStock(id, payload);
-
       return data;
     },
 
@@ -30,8 +27,12 @@ export const useAdjustProduct = () => {
       });
     },
 
-    onError: (err) => {
-      toast.error(err.response?.data?.error || "Update failed");
+    onError: (error) => {
+      toast.error(
+        error.response?.data?.message ||
+          error.response?.data?.error ||
+          "Update failed",
+      );
     },
   });
 };

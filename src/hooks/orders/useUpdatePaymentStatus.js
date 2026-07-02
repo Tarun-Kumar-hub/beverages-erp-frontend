@@ -23,5 +23,11 @@ export const useUpdatePaymentStatus = () => {
         queryKey: ["customer-order-history"],
       });
     },
+
+    onError: (error) => {
+      toast.error(
+        error.response?.data?.message || "Failed to update Payment status",
+      );
+    },
   });
 };

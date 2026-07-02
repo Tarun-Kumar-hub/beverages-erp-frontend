@@ -19,5 +19,11 @@ export const useUpdateOrderStatus = () => {
         queryKey: ["order"],
       });
     },
+
+    onError: (error) => {
+      toast.error(
+        error.response?.data?.message || "Failed to update order status",
+      );
+    },
   });
 };

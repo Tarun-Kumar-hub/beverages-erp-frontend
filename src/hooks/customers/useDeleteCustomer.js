@@ -19,5 +19,9 @@ export const useDeleteCustomer = () => {
         queryKey: ["customer-search"],
       });
     },
+
+    onError: (error) => {
+      toast.error(error.response?.data?.message || "Failed to delete customer");
+    },
   });
 };

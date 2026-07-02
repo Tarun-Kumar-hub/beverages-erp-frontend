@@ -155,26 +155,18 @@ export default function Orders() {
   // ======================================
 
   const cancelOrder = async (order) => {
-    try {
-      const result = await Swal.fire({
-        title: "Cancel Order?",
-        text: "Stock will be restored automatically.",
-        icon: "warning",
-        showCancelButton: true,
-        confirmButtonColor: "#dc2626",
-        confirmButtonText: "Yes, Cancel",
-      });
+    const result = await Swal.fire({
+      title: "Cancel Order?",
+      text: "Stock will be restored automatically.",
+      icon: "warning",
+      showCancelButton: true,
+      confirmButtonColor: "#dc2626",
+      confirmButtonText: "Yes, Cancel",
+    });
 
-      if (!result.isConfirmed) return;
+    if (!result.isConfirmed) return;
 
-      cancelMutation.mutate(order.id);
-
-      toast.success("Order cancelled successfully");
-    } catch (err) {
-      console.error(err);
-
-      toast.error(err?.response?.data?.error || "Failed to cancel order");
-    }
+    cancelMutation.mutate(order.id);
   };
 
   // ======================================

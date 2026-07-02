@@ -1,9 +1,6 @@
-// 🔑 Key Idea:
-// Delete material
-// Automatically refresh materials list after success
-
 import { useMutation, useQueryClient } from "@tanstack/react-query";
 import { deleteMaterial } from "../../api/materials";
+import toast from "react-hot-toast";
 
 export function useDeleteMaterial() {
   const queryClient = useQueryClient();
@@ -12,6 +9,8 @@ export function useDeleteMaterial() {
     mutationFn: deleteMaterial,
 
     onSuccess: () => {
+      toast.success("Material deleted");
+
       queryClient.invalidateQueries({
         queryKey: ["materials"],
       });

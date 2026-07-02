@@ -59,8 +59,8 @@ export default function Materials() {
         ...prev,
         [id]: "",
       }));
-    } catch {
-      toast.error("Failed to add stock");
+    } catch (err) {
+      toast.error(err.response?.data?.message || "Failed to add stock");
     }
   };
 

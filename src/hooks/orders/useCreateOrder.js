@@ -15,5 +15,8 @@ export const useCreateOrder = () => {
         queryKey: ["orders"],
       });
     },
+    onError: (error) => {
+      toast.error(error.response?.data?.message || "Failed to create order");
+    },
   });
 };
