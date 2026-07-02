@@ -15,6 +15,7 @@ export default function RecipeForm({ close, editData }) {
 
   const { data } = useMaterials({
     page: 1,
+    limit: 100,
     search: "",
   });
 
