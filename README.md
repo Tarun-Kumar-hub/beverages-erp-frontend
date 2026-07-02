@@ -4,7 +4,6 @@
 ![Vite](https://img.shields.io/badge/Vite-Frontend-646CFF?logo=vite)
 ![Tailwind CSS](https://img.shields.io/badge/Tailwind_CSS-3-38BDF8?logo=tailwindcss)
 ![Redux Toolkit](https://img.shields.io/badge/Redux-Toolkit-764ABC?logo=redux)
-![License](https://img.shields.io/badge/License-MIT-green)
 
 A modern, responsive **Enterprise Resource Planning (ERP)** frontend developed for beverage manufacturing companies to streamline inventory management, production workflows, packaging, customer management, and order processing.
 
