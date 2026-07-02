@@ -20,76 +20,55 @@ The application provides an intuitive dashboard with role-based access, real-tim
 https://github.com/Tarun-Kumar-hub/beverages-erp-backend
 
 ---
-
-# 📸 Application Preview
-
-> Replace these placeholders with actual screenshots.
-
-| Login | Dashboard |
-|-------|-----------|
-| ![](
-) | ![](
-) |
-
-| Materials | Orders |
-|-----------|--------|
-| ![](
-) | ![](
-) |
-
----
 # 📸 Application Preview
 
 ## 🔐 Authentication
 
-![Login](<img width="204" height="347" alt="image" src="https://github.com/user-attachments/assets/88f40701-2ceb-4554-a729-e36ae4548641" />)
+![Login](https://github.com/user-attachments/assets/88f40701-2ceb-4554-a729-e36ae4548641)
 
 ---
 
 ## 📊 Dashboard
 
-![Dashboard](<img width="935" height="448" alt="image" src="https://github.com/user-attachments/assets/bea2c8a3-4b9c-4d4d-ab22-3cb3268bc4f8" />)
+![Dashboard](https://github.com/user-attachments/assets/bea2c8a3-4b9c-4d4d-ab22-3cb3268bc4f8)
 
 ---
 
 ## 📦 Raw Materials
 
-![Materials](<img width="734" height="287" alt="image" src="https://github.com/user-attachments/assets/508d7285-a9cc-489e-8a2a-13b81d98be08" />
-)
+![Raw Materials](https://github.com/user-attachments/assets/508d7285-a9cc-489e-8a2a-13b81d98be08)
 
 ---
 
 ## 🧪 Recipes
 
-![Recipes](<img width="742" height="299" alt="image" src="https://github.com/user-attachments/assets/3475b349-950c-45ff-a3e8-8abfe49241ab" />
-)
+![Recipes](https://github.com/user-attachments/assets/3475b349-950c-45ff-a3e8-8abfe49241ab)
 
 ---
 
 ## 🛒 Orders
 
-![Orders](<img width="746" height="371" alt="image" src="https://github.com/user-attachments/assets/e3d25a1f-d06e-462c-94c2-8cc0dda39b4c" />)
+![Orders](https://github.com/user-attachments/assets/e3d25a1f-d06e-462c-94c2-8cc0dda39b4c)
 
 ---
 
 ## 👥 Customers
 
-![Customers](<img width="741" height="399" alt="image" src="https://github.com/user-attachments/assets/4d6719e2-144c-449c-bf27-f881829794dd" />
-)
+![Customers](https://github.com/user-attachments/assets/4d6719e2-144c-449c-bf27-f881829794dd)
 
 ---
 
 ## 📦 Product Stock
 
-![Products](<img width="707" height="379" alt="image" src="https://github.com/user-attachments/assets/959cd8b5-3c2c-4593-a609-057c931bc86b" />
-)
+![Product Stock](https://github.com/user-attachments/assets/959cd8b5-3c2c-4593-a609-057c931bc86b)
 
 ---
 
 ## 🛢 Containers
 
-![Containers](<img width="662" height="398" alt="image" src="https://github.com/user-attachments/assets/070a695b-464b-479c-8338-bb0b6062b05a" />
-)
+![Containers](https://github.com/user-attachments/assets/070a695b-464b-479c-8338-bb0b6062b05a)
+---
+
 # ✨ Highlights
 
 - Enterprise ERP Dashboard
