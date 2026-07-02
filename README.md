@@ -6,11 +6,33 @@
 ![Redux Toolkit](https://img.shields.io/badge/Redux-Toolkit-764ABC?logo=redux)
 ![License](https://img.shields.io/badge/License-MIT-green)
 
-A modern, responsive **Enterprise Resource Planning (ERP)** frontend built for beverage manufacturing companies to streamline inventory management, production workflows, packaging operations, customer management, and order processing.
+A modern, responsive **Enterprise Resource Planning (ERP)** frontend developed for beverage manufacturing companies to streamline inventory management, production workflows, packaging, customer management, and order processing.
 
-The application provides an intuitive dashboard with role-based access, real-time business insights, interactive analytics, and seamless communication with a RESTful backend API.
-
+Built with **React.js**, **Vite**, **Redux Toolkit**, and **TanStack Query**, the application delivers a fast, responsive user experience with secure authentication, role-based access control, real-time analytics, and seamless integration with a RESTful backend API.
 ---
+## 📑 Table of Contents
+
+- [Live Demo](#-live-demo)
+- [Deployment](#-deployment)
+- [Application Preview](#-application-preview)
+- [Highlights](#-highlights)
+- [Production Features](#-production-features)
+- [Features](#-features)
+- [Tech Stack](#-tech-stack)
+- [Architecture](#-architecture)
+- [Project Structure](#-project-structure)
+- [Authentication](#-authentication)
+- [API Integration](#-api-integration)
+- [Environment Variables](#️-environment-variables)
+- [Installation](#-installation)
+- [Available Scripts](#-available-scripts)
+- [Responsive Design](#-responsive-design)
+- [Future Enhancements](#-future-enhancements)
+- [Related Repository](#-related-repository)
+- [Author](#-author)
+- [Support](#-support)
+---
+
 
 ## 🌐 Live Demo
 
@@ -20,25 +42,38 @@ The application provides an intuitive dashboard with role-based access, real-tim
 https://github.com/Tarun-Kumar-hub/beverages-erp-backend
 
 ---
+## 🚀 Deployment
+
+| Component | Platform |
+|-----------|----------|
+| Frontend | Vercel |
+| Backend | Render |
+| Database | PostgreSQL |
+---
 # 📸 Application Preview
 
-Explore some of the key modules of the Beverage ERP System.
+Explore the key modules of the **Beverage ERP System**.
 
-| Login | Dashboard |
-|:------:|:---------:|
+| 🔐 Login | 📊 Dashboard |
+|:---------:|:------------:|
 | ![Login](https://github.com/user-attachments/assets/88f40701-2ceb-4554-a729-e36ae4548641) | ![Dashboard](https://github.com/user-attachments/assets/bea2c8a3-4b9c-4d4d-ab22-3cb3268bc4f8) |
 
-| Raw Materials | Recipes |
-|:-------------:|:-------:|
+| 📦 Raw Materials | 🧪 Recipes |
+|:----------------:|:----------:|
 | ![Raw Materials](https://github.com/user-attachments/assets/508d7285-a9cc-489e-8a2a-13b81d98be08) | ![Recipes](https://github.com/user-attachments/assets/3475b349-950c-45ff-a3e8-8abfe49241ab) |
 
-| Orders | Customers |
-|:------:|:---------:|
-| ![Orders](https://github.com/user-attachments/assets/e3d25a1f-d06e-462c-94c2-8cc0dda39b4c) | ![Customers](https://github.com/user-attachments/assets/4d6719e2-144c-449c-bf27-f881829794dd) |
+| 🛢 Containers | 📦 Product Stock |
+|:-------------:|:----------------:|
+| ![Containers](https://github.com/user-attachments/assets/070a695b-464b-479c-8338-bb0b6062b05a) | ![Product Stock](https://github.com/user-attachments/assets/959cd8b5-3c2c-4593-a609-057c931bc86b) |
 
-| Product Stock | Containers |
-|:-------------:|:----------:|
-| ![Product Stock](https://github.com/user-attachments/assets/959cd8b5-3c2c-4593-a609-057c931bc86b) | ![Containers](https://github.com/user-attachments/assets/070a695b-464b-479c-8338-bb0b6062b05a) |
+| 🛒 Create Order | 📋 Orders |
+|:---------------:|:---------:|
+| ![Create Order](https://github.com/user-attachments/assets/d389cd40-555f-4cd3-ace1-fbb83be17c54) | ![Orders](https://github.com/user-attachments/assets/e3d25a1f-d06e-462c-94c2-8cc0dda39b4c) |
+
+| 👥 Customers | 📜 Inventory History |
+|:------------:|:--------------------:|
+| ![Customers](https://github.com/user-attachments/assets/4d6719e2-144c-449c-bf27-f881829794dd) | ![Inventory History](https://github.com/user-attachments/assets/19c73f80-5a3a-401e-9080-af0000d12aab) |
+---
 
 # ✨ Highlights
 
@@ -54,7 +89,19 @@ Explore some of the key modules of the Beverage ERP System.
 - Interactive Charts & Analytics
 
 ---
+# 💡 Production Features
 
+- 🔐 JWT Authentication & Authorization
+- 👤 Role-Based Access Control (RBAC)
+- 🔄 Automatic Access Token Refresh
+- 🌐 Axios Interceptors for API Requests
+- ⚡ TanStack Query Caching & Server State Management
+- 📄 Server-side Pagination
+- 🔍 Search & Filtering
+- 📱 Fully Responsive Design
+- 🔔 Toast Notifications
+- 🧩 Reusable Component Architecture
+---
 # 🚀 Features
 
 | Module | Features |
@@ -73,40 +120,45 @@ Explore some of the key modules of the Beverage ERP System.
 
 # 🛠 Tech Stack
 
-### Frontend
-
+### Frontend Framework
 - React.js
 - Vite
+
+### Styling
 - Tailwind CSS
-- React Router DOM
+
+### State Management
 - Redux Toolkit
 - TanStack Query
+
+### Routing
+- React Router DOM
+
+### API Communication
 - Axios
-- React Hot Toast
+
+### UI Components
 - React Select
-- Recharts
 - Lucide React
+- React Hot Toast
 
 ---
 
 # 🏗 Architecture
 
 ```
-React.js
-     │
-     ▼
-Redux Toolkit
-TanStack Query
-Axios API Client
-     │
-     ▼
-REST API
-     │
-     ▼
-Node.js + Express.js
-     │
-     ▼
-PostgreSQL
+                    Frontend
+        React.js + Vite + Tailwind CSS
+                    │
+     Redux Toolkit + TanStack Query
+                    │
+           Axios API Client
+                    │
+             RESTful API
+                    │
+          Node.js + Express.js
+                    │
+                PostgreSQL
 ```
 
 ---
@@ -170,30 +222,19 @@ VITE_API_URL=http://localhost:5000/api
 
 # 📦 Installation
 
-Clone the repository
-
 ```bash
+# Clone the repository
 git clone https://github.com/Tarun-Kumar-hub/beverages-erp-frontend.git
-```
 
-Navigate to the project
-
-```bash
+# Navigate to the project
 cd beverages-erp-frontend
-```
 
-Install dependencies
-
-```bash
+# Install dependencies
 npm install
-```
 
-Start the development server
-
-```bash
+# Start the development server
 npm run dev
 ```
-
 ---
 
 # 📜 Available Scripts
@@ -217,14 +258,15 @@ The application is optimized for:
 
 ---
 
-# 📌 Future Improvements
+# 📌 Future Enhancements
 
-- Dark Mode
-- Multi-language Support
-- Real-time Notifications
-- Offline Support
-- Advanced Analytics Dashboard
-- Export Reports (PDF/Excel)
+- 🌙 Dark Mode
+- 🌍 Multi-language Support
+- 🔔 Real-time Notifications
+- 📈 Advanced Analytics Dashboard
+- 📄 PDF & Excel Report Export
+- 📱 Progressive Web App (PWA) Support
+- 📊 Advanced Business Reports
 
 ---
 
@@ -235,17 +277,12 @@ The application is optimized for:
 https://github.com/Tarun-Kumar-hub/beverages-erp-backend
 
 ---
-
-# 👨‍💻 Author
+## 👨‍💻 Author
 
 **Tarun Kumar**
 
-**GitHub:**  
-https://github.com/Tarun-Kumar-hub
-
-**LinkedIn:**  
-https://www.linkedin.com/in/tarun-kumar-042288144/
-
+- **GitHub:** [Tarun-Kumar-hub](https://github.com/Tarun-Kumar-hub)
+- **LinkedIn:** [Tarun Kumar](https://www.linkedin.com/in/tarun-kumar-042288144/)
 ---
 
 ## ⭐ Support
