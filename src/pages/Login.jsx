@@ -12,7 +12,7 @@ const Login = () => {
 
     const wakeServer = async () => {
       try {
-        await axios.get(`${import.meta.env.VITE_API_URL}/keep-aliv`);
+        await axios.get(`${import.meta.env.VITE_API_URL}/keep-alive`);
 
         if (mounted) {
           setServerReady(true);
