@@ -22,52 +22,23 @@ https://github.com/Tarun-Kumar-hub/beverages-erp-backend
 ---
 # 📸 Application Preview
 
-## 🔐 Authentication
+Explore some of the key modules of the Beverage ERP System.
 
-![Login](https://github.com/user-attachments/assets/88f40701-2ceb-4554-a729-e36ae4548641)
+| Login | Dashboard |
+|:------:|:---------:|
+| ![Login](https://github.com/user-attachments/assets/88f40701-2ceb-4554-a729-e36ae4548641) | ![Dashboard](https://github.com/user-attachments/assets/bea2c8a3-4b9c-4d4d-ab22-3cb3268bc4f8) |
 
----
+| Raw Materials | Recipes |
+|:-------------:|:-------:|
+| ![Raw Materials](https://github.com/user-attachments/assets/508d7285-a9cc-489e-8a2a-13b81d98be08) | ![Recipes](https://github.com/user-attachments/assets/3475b349-950c-45ff-a3e8-8abfe49241ab) |
 
-## 📊 Dashboard
+| Orders | Customers |
+|:------:|:---------:|
+| ![Orders](https://github.com/user-attachments/assets/e3d25a1f-d06e-462c-94c2-8cc0dda39b4c) | ![Customers](https://github.com/user-attachments/assets/4d6719e2-144c-449c-bf27-f881829794dd) |
 
-![Dashboard](https://github.com/user-attachments/assets/bea2c8a3-4b9c-4d4d-ab22-3cb3268bc4f8)
-
----
-
-## 📦 Raw Materials
-
-![Raw Materials](https://github.com/user-attachments/assets/508d7285-a9cc-489e-8a2a-13b81d98be08)
-
----
-
-## 🧪 Recipes
-
-![Recipes](https://github.com/user-attachments/assets/3475b349-950c-45ff-a3e8-8abfe49241ab)
-
----
-
-## 🛒 Orders
-
-![Orders](https://github.com/user-attachments/assets/e3d25a1f-d06e-462c-94c2-8cc0dda39b4c)
-
----
-
-## 👥 Customers
-
-![Customers](https://github.com/user-attachments/assets/4d6719e2-144c-449c-bf27-f881829794dd)
-
----
-
-## 📦 Product Stock
-
-![Product Stock](https://github.com/user-attachments/assets/959cd8b5-3c2c-4593-a609-057c931bc86b)
-
----
-
-## 🛢 Containers
-
-![Containers](https://github.com/user-attachments/assets/070a695b-464b-479c-8338-bb0b6062b05a)
----
+| Product Stock | Containers |
+|:-------------:|:----------:|
+| ![Product Stock](https://github.com/user-attachments/assets/959cd8b5-3c2c-4593-a609-057c931bc86b) | ![Containers](https://github.com/user-attachments/assets/070a695b-464b-479c-8338-bb0b6062b05a) |
 
 # ✨ Highlights
 
