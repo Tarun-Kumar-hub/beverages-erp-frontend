@@ -1,0 +1,8 @@
+* [33mb696d84[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m)[m Increase material fetch limit for recipe dropdown
+* [33m9255d38[m fix: increase axios timeout from 10s to 30s for Render cold starts
+[31m|[m * [33mdfd0a65[m[33m ([m[1;31morigin/main[m[33m)[m Update axios.js
+[31m|[m[31m/[m  
+* [33m461fa8e[m corrected order layout
+* [33m00fa7b8[m Configure Vercel rewrites for React Router
+* [33me0c3ea2[m Improve login UX for Render cold starts
+* [33mfbfb78b[m Initial frontend commit
